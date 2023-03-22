@@ -1,18 +1,14 @@
 #include "main.h"
-#include <unistd.h>
-#include <stdio.h>
-/**
- * add - Something
- *
- * @a: j
- * @b: f
- * Description: 'print_alphabet is a function'
- *
- * Return: Always 0.
- */
 
+/**
+ * add - adds two integers and returns the result
+ *
+ * @a: number one
+ * @b: number two
+ *
+ * Return: results of two number.
+ */
 int add(int a, int b)
 {
 	return (a + b);
-
 }

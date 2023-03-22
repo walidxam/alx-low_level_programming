@@ -1,37 +1,35 @@
 #include "main.h"
-#include <unistd.h>
-#include <stdio.h>
-/**
- * jack_bauer - Something
- *
- * Description: 'print_alphabet is a function'
- *
- * Return: Always 0.
- */
 
+/**
+ * jack_bauer-prints every minute of the day of Jack Bauer,
+ *
+ * starting from 00:00 to 23:59.
+ * Return: 0 if successful
+ */
 void jack_bauer(void)
 {
-	int a, b, c, d;
+	int i, j, k, m;
 
-	for (a = 48; a <= 50; a++)
+	for (i = 0; i <= 2; i++)
 	{
-		for (b = 48; b <= 57; b++)
+		for (j = 0; j <= 9; j++)
 		{
-			for (c = 48; c <= 53; c++)
+			for (k = 0; k <= 5; k++)
 			{
-				for (d = 48; d <= 57; d++)
+				for (m = 0; m <= 9; m++)
 				{
-					if (a >= 50 && b >= 52)
+					if (i == 2 && j > 3)
+					{
 						break;
-					_putchar(a);
-					_putchar(b);
-					_putchar(58);
-					_putchar(c);
-					_putchar(d);
+					}
+					_putchar(i + '0');
+					_putchar(j + '0');
+					_putchar(':');
+					_putchar(k + '0');
+					_putchar(m + '0');
 					_putchar('\n');
 				}
 			}
 		}
 	}
-
 }

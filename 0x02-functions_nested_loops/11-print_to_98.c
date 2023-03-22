@@ -1,32 +1,45 @@
 #include "main.h"
-#include <unistd.h>
 #include <stdio.h>
-/**
- * print_to_98 - Something
- *
- * @n: j
- *
- * Description: 'print_alphabet is a function'
- *
- * Return: Always 0.
- */
 
+/**
+ * print_to_98 - prints all natural numbers from n to 98
+ *
+ * @n: number
+ *
+ * Return: Void
+ */
 void print_to_98(int n)
 {
-	if (n > 98)
+	if (n <= 98)
 	{
-		for (; n > 98; n--)
+		for (; n <= 98; n++)
 		{
-			printf("%d, ", n);
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
 		}
 	}
-	else if (n < 98)
+	else
 	{
-		for (; n < 98; n++)
+		for (; n >= 98; n--)
 		{
-			printf("%d, ", n);
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
 		}
 	}
-	printf("%d\n", n);
-
 }
