@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * main- Fizz-Buzz
+ * main - prints the number from 1 - 100, but for mult of 3 & 5 print Fizz Buzz
  *
- * Return:0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
